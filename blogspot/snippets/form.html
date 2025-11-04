@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <form id="union-builder-form">
+    <form id="union-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="flat_No">Flat No:</label>
+        <input type="text" id="flat_No" name="flat_No" required>
 
-        <label for="union">Union:</label>
-        <input type="text" id="union" name="union" required>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9+\-\s()]{5,}" required>
 
         <button type="submit">Submit</button>
+        <div id="form-message" style="margin-top:8px"></div>
     </form>
 
     <script src="../assets/js/main.js"></script>
